@@ -69,7 +69,7 @@ namespace OData.API
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapODataRoute("odata", "odata", builder.GetEdmModel());
+                endpoints.MapODataRoute("odata", "odata", builder.GetEdmModel()); // Yeni Route belirlendi.
                 endpoints.MapControllers();
             });
         }
